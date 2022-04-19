@@ -117,17 +117,17 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 text="Commands ❓", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                text="Owner",
+                url="https://t.me/Developer_boy_d",
             ),
         ],
         [
+          #  InlineKeyboardButton(
+                #text="System Stats 🖥",
+                #callback_data="stats_callback",
+            #),
             InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
-            ),
-            InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="Support 👨", url="http://t.me/chattingwithothers"
             ),
         ],
         [
@@ -140,6 +140,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
+          "[.](https://telegra.ph/file/b222e851d7c395223e37d.jpg)"+
         f"Hey there! My name is {BOT_NAME}. I can manage your "
         + "group with lots of useful features, feel free to "
         + "add me to your group."
@@ -153,16 +154,18 @@ keyboard = InlineKeyboardMarkup(
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                text="Owner",
+                url="https://t.me/Developer_boy_d",
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="System Stats 💻",
-                callback_data="stats_callback",
-            ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/WBBSupport"),
+        
+           [
+          #  InlineKeyboardButton(
+                #text="System Stats 🖥",
+                #callback_data="stats_callback",
+            #),
+            
+            InlineKeyboardButton(text="Support 👨", url="t.me/chattingwithothers"),
         ],
     ]
 )
@@ -262,7 +265,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """Hello {first_name}, My name is {bot_name}.
-I'm a group management bot with some useful features.
+[I'm](https://telegra.ph/file/b222e851d7c395223e37d.jpg) a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 """.format(
@@ -301,7 +304,7 @@ async def help_button(client, query):
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
 Hello {query.from_user.first_name}, My name is {BOT_NAME}.
-I'm a group management bot with some usefule features.
+[I'm](https://telegra.ph/file/b222e851d7c395223e37d.jpg) a group management bot with some usefule features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 
