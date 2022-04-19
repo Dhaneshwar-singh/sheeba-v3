@@ -31,7 +31,7 @@ from wbb.core.decorators.errors import capture_err
 from wbb.utils.dbfunctions import get_couple, save_couple
 
 __MODULE__ = "Shippering"
-__HELP__ = "/detect_gay - To Choose Couple Of The Day"
+__HELP__ = "/love - To Choose Couple Of The Day"
 
 
 # Date and time
@@ -57,13 +57,13 @@ today = str(dt()[0])
 tomorrow = str(dt_tom())
 
 
-@app.on_message(filters.command("detect_gay") & ~filters.edited)
+@app.on_message(filters.command("love") & ~filters.edited)
 @capture_err
 async def couple(_, message):
     if message.chat.type == "private":
         return await message.reply_text("This command only works in groups.")
 
-    m = await message.reply("Detecting gay among us...")
+    m = await message.reply("Detecting love Birds among us...")
 
     try:
         chat_id = message.chat.id
