@@ -20,7 +20,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-"""
+
 from pyrogram import filters
 
 from wbb import app
@@ -35,7 +35,7 @@ __HELP__ = "/repo - To Get My Github Repository Link " "And Support Group Link"
 @capture_err
 async def repo(_, message):
     users = await get(
-        "https://api.github.com/repos/thehamkercat/williambutcherbot/contributors"
+        "https://api.github.com/repos/thehamkercat/williambutcherbo"
     )
     list_of_users = ""
     count = 1
@@ -45,11 +45,12 @@ async def repo(_, message):
         )
         count += 1
 
-    text = f"""[Github](https://github.com/thehamkercat/WilliamButcherBot) | [Group](t.me/PatheticProgrammers)
+    text = f[Github](https://github.com/thehamkercat/WilliamButcherBot) | [Group](t.me/PatheticProgrammers)
 ```----------------
 | Contributors |
 ----------------```
-{list_of_users}"""
+{list_of_users}
     await app.send_message(
         message.chat.id, text=text, disable_web_page_preview=True
     )
+""" 
