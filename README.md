@@ -1,5 +1,5 @@
-<h1 align="center"> 
-    ✨ WilliamButcherBot ✨ 
+
+   
 </h1>
 
 <h3 align="center"> 
@@ -48,8 +48,8 @@
 </h2>
 
 ```console
-thehamkercat@arch:~$ git clone https://github.com/thehamkercat/WilliamButcherBot
-thehamkercat@arch:~$ cd WilliamButcherBot
+thehamkercat@arch:~$ git clone 
+thehamkercat@arch:~$
 thehamkercat@arch:~$ pip3 install -U -r requirements.txt
 thehamkercat@arch:~$ cp sample_config.py config.py
 ```
@@ -63,7 +63,7 @@ thehamkercat@arch:~$ cp sample_config.py config.py
 </h2>
 
 ```console
-thehamkercat@arch:~$ python3 -m wbb
+
 ```
 
 <h1>
