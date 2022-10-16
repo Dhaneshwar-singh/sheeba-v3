@@ -25,3 +25,7 @@ fuzzysearch
 img2pdf
 telegraph
 pytube
+youtube_dl
+jjava
+ruby
+python
