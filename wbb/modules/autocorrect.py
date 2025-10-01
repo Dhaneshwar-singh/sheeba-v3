@@ -51,12 +51,12 @@ async def autocorrect_ubot_toggle(_, message: Message):
     filters.text & ~filters.edited & filters.user(USERBOT_ID),
     group=autocorrect_group,
 )
-async def autocorrect_ubot(_, message: Message):
-    if not IS_ENABLED:
-        return
-    text = message.text
-    data = await arq.spellcheck(text)
-    corrected = data.result.corrected
-    if corrected == text:
-        return
-    await message.edit(corrected)
+# async def autocorrect_ubot(_, message: Message):
+#     if not IS_ENABLED:
+#         return
+#     text = message.text
+#     data = await arq.spellcheck(text)
+#     corrected = data.result.corrected
+#     if corrected == text:
+#         return
+#     await message.edit(corrected)
