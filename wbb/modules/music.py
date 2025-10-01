@@ -127,12 +127,6 @@ async def music(_, message):
 
 
 # Funtion To Download Song
-async def download_song(url):
-    async with session.get(url) as resp:
-        song = await resp.read()
-    song = BytesIO(song)
-    song.name = "a.mp3"
-    return song
 
 
 # Jiosaavn Music
