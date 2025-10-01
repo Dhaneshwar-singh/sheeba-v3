@@ -72,17 +72,17 @@ async def chat_bot_toggle(db, message: Message):
 # Enabled | Disable Chatbot
 
 
-@app.on_message(filters.command("chatbot") & ~filters.edited)
-@capture_err
-async def chatbot_status(_, message: Message):
-    if len(message.command) != 2:
-        return await eor(message, text="**Usage:**\n/chatbot [ENABLE|DISABLE]")
-    await chat_bot_toggle(active_chats_bot, message)
+# @app.on_message(filters.command("chatbot") & ~filters.edited)
+# @capture_err
+# async def chatbot_status(_, message: Message):
+#     if len(message.command) != 2:
+#         return await eor(message, text="**Usage:**\n/chatbot [ENABLE|DISABLE]")
+#     await chat_bot_toggle(active_chats_bot, message)
 
 
-async def lunaQuery(query: str, user_id: int):
-    luna = await arq.luna(query, user_id)
-    return luna.result
+# async def lunaQuery(query: str, user_id: int):
+#     luna = await arq.luna(query, user_id)
+#     return luna.result
 
 
 async def type_and_send(message: Message):
