@@ -106,19 +106,19 @@ async def download_func(_, message: Message):
 
 
 @app2.on_message(SUDOERS & filters.command("upload", prefixes=USERBOT_PREFIX))
-async def upload_func(_, message: Message):
-    if len(message.text.split()) != 2:
-        return await eor(message, text="Invalid Arguments")
+# async def upload_func(_, message: Message):
+#     if len(message.text.split()) != 2:
+#         return await eor(message, text="Invalid Arguments")
 
-    url_or_path = message.text.split(None, 1)[1]
+#     url_or_path = message.text.split(None, 1)[1]
 
-    start = time()
+#     start = time()
 
-    body = {
-        "Started": ctime(start),
-    }
+#     body = {
+#         "Started": ctime(start),
+#     }
 
-    m = await eor(message, text=section("Uploading", body))
+#     m = await eor(message, text=section("Uploading", body))
 
     async def upload_file(path: str):
         task, task_id = await add_task(
