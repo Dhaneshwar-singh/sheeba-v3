@@ -9,5 +9,5 @@ i = c(api_id=API_ID, api_hash=API_HASH)
 
 with i:
     ss = i.export_session_string()
-    print("\nHERE IS YOUR STRING SESSION, COPY IT, DON'T SHARE!!\n")
+    print("\nHERE IS YOUR STRING SESSION, COPY IT, DON'T SHARE IT IS SECRET !\n")
     
