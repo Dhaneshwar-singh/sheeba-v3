@@ -43,12 +43,6 @@
    ⇝ Install Locally Or On A VPS ⇜
 </h2>
 
-```console
-thehamkercat@arch:~$ git clone 
-thehamkercat@arch:~$
-thehamkercat@arch:~$ pip3 install -U -r requirements.txt
-thehamkercat@arch:~$ cp sample_config.py config.py
-```
  
 <h3 align="center"> 
     Edit <b>config.py</b> with your own values
