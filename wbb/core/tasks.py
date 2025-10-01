@@ -35,22 +35,6 @@ async def add_task(
     return task, task_id
 
 
-async def rm_task(task_id=None):
-    global tasks
-
-    async with TASKS_LOCK:
-        for key, value in list(tasks.items()):
-            if value[0].done() or value[0].cancelled():
-                del tasks[key]
-
-        if (task_id is not None) and (task_id in tasks):
-            task = tasks[task_id][0]
-
-            if not task.done():
-                task.cancel()
-
-            del tasks[task_id]
-
 
 async def _get_tasks_text():
     await rm_task()  # Clean completed tasks
