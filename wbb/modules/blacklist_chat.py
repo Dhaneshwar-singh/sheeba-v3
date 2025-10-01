@@ -72,14 +72,14 @@ async def whitelist_chat_func(_, message: Message):
     & ~filters.edited
 )
 @capture_err
-# async def blacklisted_chats_func(_, message: Message):
-#     text = ""
-#     for count, chat_id in enumerate(await blacklisted_chats(), 1):
-#         try:
-#             title = (await app.get_chat(chat_id)).title
-#         except Exception:
-#             title = "Private"
-#         text += f"**{count}. {title}** [`{chat_id}`]\n"
-#     if text == "":
-#         return await message.reply_text("No blacklisted chats found.")
-#     await message.reply_text(text)
+async def blacklisted_chats_func(_, message: Message):
+    text = ""
+    for count, chat_id in enumerate(await blacklisted_chats(), 1):
+        try:
+            title = (await app.get_chat(chat_id)).title
+        except Exception:
+            title = "Private"
+        text += f"**{count}. {title}** [`{chat_id}`]\n"
+    if text == "":
+        return await message.reply_text("No blacklisted chats found.")
+    await message.reply_text(text)
