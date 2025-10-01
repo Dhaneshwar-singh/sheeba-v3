@@ -88,20 +88,20 @@ async def save_notee(_, message):
 @app2.on_message(filters.command("notes", prefixes=USERBOT_PREFIX) & SUDOERS)
 @app.on_message(filters.command("notes") & ~filters.edited & ~filters.private)
 @capture_err
-async def get_notes(_, message):
-    prefix = message.text.split()[0][0]
-    is_ubot = bool(prefix == USERBOT_PREFIX)
-    chat_id = USERBOT_ID if is_ubot else message.chat.id
+# async def get_notes(_, message):
+#     prefix = message.text.split()[0][0]
+#     is_ubot = bool(prefix == USERBOT_PREFIX)
+#     chat_id = USERBOT_ID if is_ubot else message.chat.id
 
-    _notes = await get_note_names(chat_id)
+#     _notes = await get_note_names(chat_id)
 
-    if not _notes:
-        return await eor(message, text="**No notes in this chat.**")
-    _notes.sort()
-    msg = f"List of notes in {'USERBOT' if is_ubot else message.chat.title}\n"
-    for note in _notes:
-        msg += f"**-** `{note}`\n"
-    await eor(message, text=msg)
+#     if not _notes:
+#         return await eor(message, text="**No notes in this chat.**")
+#     _notes.sort()
+#     msg = f"List of notes in {'USERBOT' if is_ubot else message.chat.title}\n"
+#     for note in _notes:
+#         msg += f"**-** `{note}`\n"
+#     await eor(message, text=msg)
 
 
 @app2.on_message(filters.command("get", prefixes=USERBOT_PREFIX) & SUDOERS)
