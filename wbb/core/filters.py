@@ -46,9 +46,6 @@ def entities(_, __, message: Message) -> bool:
     return bool(message.entities)
 
 
-def anonymous(_, __, message: Message) -> bool:
-    return bool(message.sender_chat)
-
 
 def sudoers(_, __, message: Message) -> bool:
     if not message.from_user:
