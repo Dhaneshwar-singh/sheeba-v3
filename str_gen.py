@@ -1,6 +1,6 @@
 from pyrogram import Client as c
 
-
+# get it from www.telegram.org
 API_HASH = input("\nEnter Your API_HASH:\n > ")
 API_HASH = input("\nEnter Your API_HASH:\n > ")
 print("\n\n Enter Phone number when asked.\n\n")
