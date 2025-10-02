@@ -29,7 +29,7 @@
 
 
 <h2 align="center"> 
-   ⇝ Requirements ⇜
+   ⇝  Requirements  ⇜
 </h2>
 
 <p align="center">
