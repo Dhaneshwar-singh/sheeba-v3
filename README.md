@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center"> 
-    A telegram Group Manager Bot + Userbot Written In Python Using Pyrogram
+    A telegram Group Manager Bot + Userbot Written In Python Using Pyrogram.
 </h3>
 
 <p align="center">
@@ -29,7 +29,7 @@
 
 
 <h2 align="center"> 
-   ⇝  Requirements  ⇜
+   ⇝ Requirements ⇜
 </h2>
 
 <p align="center">
@@ -49,11 +49,11 @@
 </h3>
 
 <h2 align="center"> 
-   ⇝ Run Directly ⇜
+   ⇝  Run Directly  ⇜
 </h2>
 
 ```console
-
+   
 ```
 
 <h1>
