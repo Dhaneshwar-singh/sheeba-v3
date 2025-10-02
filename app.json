@@ -1,12 +1,13 @@
 {
     "name": "SheebaBot",
-    "description": "Telegram Group Management Bot Written In Python Using Pyrogram.",
+    "description": "Telegram Group Management Bot + Userbot Written In Python Using Pyrogram.",
     "repository": "",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
+    "userbot",
     "youtube",
     "telegram-bot",
     "pyrogram"
