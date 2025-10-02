@@ -7,7 +7,7 @@ load_dotenv("config.env")
 HEROKU = bool(
     environ.get("DYNO")
 )  # NOTE Make it false if you're not deploying on heroku or docker.
-
+# Faltu ka comment
 if HEROKU:
 
     BOT_TOKEN = environ.get("BOT_TOKEN", None)
