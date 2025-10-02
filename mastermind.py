@@ -5,6 +5,7 @@ import random
 # random number within the specified range.
 num = random.randrange(1000, 10000)
 
+# this takes input and convert it to integer
 n = int(input("Guess the 4 digit number:"))
 
 # condition to test equality of the
